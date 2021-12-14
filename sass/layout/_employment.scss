@@ -1,0 +1,50 @@
+/*----------------------------наша команда фото*/
+.section-services {
+   background: var(--background-section);
+   padding-top: 0;
+}
+.text-title {
+   font-style: normal;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.16;
+   letter-spacing: 0.03em;
+
+   text-align: center;
+
+   color: var(--text-header);
+}
+.employment-list {
+   display: flex;
+   margin-top: 50px;
+   flex-basis: calc(100% / 3 - 30px);
+}
+.employment-item-wrap {
+   position: relative;
+}
+
+.employment-item:not(:last-child) {
+   margin-right: 30px;
+}
+.employment-text {
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   
+   height: 70px;
+   text-transform: uppercase;
+   font-size: 500;
+   text-align: center;
+   font-size: 14px;
+   line-height: 1.1;
+   letter-spacing: 0.03em; 
+   width: 100%;
+
+   color: var(--background-section);
+  background-color: rgba(47, 48, 58, 0.8);
+}

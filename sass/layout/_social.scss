@@ -1,0 +1,33 @@
+/* соц сети */
+.social-icon-list {
+   display: flex;
+   justify-content: center;
+}
+.social-icon-item {
+   width: 44px;
+   height: 44px;
+}
+.social-icon-item + .social-icon-item {
+   margin-left: 10px;
+}
+.social-icon-link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   color: var(--color-icon-clients);
+   transition-property: color, background-color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover,
+   &:focus {
+      background-color: var(--text-active);
+      color: var(--background-section);
+   }
+}
+
+.social-icon {
+   fill: currentColor;
+}

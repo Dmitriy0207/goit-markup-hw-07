@@ -1,0 +1,103 @@
+.header {
+   background-color: var(--background-section);
+   border-bottom-color: #ececec;
+   border-bottom-width: 1px;
+   border-bottom-style: solid;
+}
+
+.head-conteiner {
+   display: flex;
+   padding-top: 25px;
+   padding-bottom: 25px;
+}
+
+.nav-conteiner {
+   display: flex;
+   align-items: center;
+}
+
+.site-nav {
+   display: flex;
+   &::before {
+      content: "";
+      border-bottom: 4px solid var(--text-active);
+      border-radius: 2px;
+   }
+}
+
+.site-contacts {
+  display: flex;
+   margin-left: auto;
+   align-items: center;
+}
+.site-contacts-item:not(:last-child) {
+   margin-right: 50px;
+}
+.site-nav-link.current::after {
+   content: "";
+   position: absolute;
+   width: 100%;
+   background-color: var(--text-active);
+   border-bottom: 4px solid var(--text-active);
+   border-radius: 2px;
+   display: block;
+   bottom: -26px;
+}
+.logo {
+   font-family: "Raleway";
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.38;
+   color: var(--text-header);
+   margin-right: 93px;
+}
+.web-logo {
+   color: var(--text-active);
+}
+.site-nav-link {
+   display: flex;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.2;
+   color: var(--text-header);
+   padding-top: 10px;
+   padding-bottom: 10px;
+   position: relative;
+   transition-property: color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover,
+   &:focus {
+      color: var(--text-active);
+   }
+}
+.site-nav-item:not(:last-child) {
+   margin-right: 50px;
+}
+
+.contacts {
+   display: flex;
+   align-items: center;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.2;
+   letter-spacing: 0.02em;
+   color: var(--color-text);
+   transition-property: color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts:hover,
+.contacts:focus,
+.footer-contacts {
+   color: var(--text-active);
+}
+.site-contacts-icon {
+   margin-right: 10px;
+   fill: currentColor;
+}
+.site-contacts-icon:hover,
+.site-contacts-icon:focus {
+   fill: #2196f3;
+}

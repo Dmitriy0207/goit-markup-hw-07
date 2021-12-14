@@ -1,0 +1,51 @@
+/* -------------------join us */
+.join-footer {
+   margin-left: 70px;
+}
+.join-us,
+.subscribe {
+   font-style: 700;
+   font-size: 14px;
+   line-height: 1.1;
+   letter-spacing: 0.03em;
+   color: var(--background-section);
+   text-transform: uppercase;
+}
+.footer-icon-list {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+}
+.footer-icon-item {
+   width: 44px;
+   height: 44px;
+}
+.footer-icon-item + .footer-icon-item {
+   margin-left: 10px;
+}
+.footer-icon-link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   width: 100%;
+   height: 100%;
+
+   border-radius: 50%;
+   color: var(--background-section);
+   background-color: rgba(255, 255, 255, 0.1);
+
+   transition-property: color, background-color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover,
+   &:focus {
+      background-color: var(--text-active);
+      color: var(--background-section);
+   }
+}
+
+.footer-icon {
+   fill: currentColor;
+}

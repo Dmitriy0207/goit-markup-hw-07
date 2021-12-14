@@ -1,0 +1,47 @@
+.footer-block {
+   display: flex;
+   align-items: baseline;
+}
+/*------------ address */
+.footer-content {
+   background: #2f303a;
+   padding-top: 60px;
+   padding-bottom: 60px;
+}
+.footer-logo {
+   color: var(--background-section);
+   font-family: "Raleway";
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.38;
+}
+.location {
+   color: var(--background-section);
+}
+.address-footer {
+   flex-grow: 1;
+}
+.address-content {
+   margin-top: 20px;
+}
+.address-item {
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 1.71;
+   letter-spacing: 0.03em;
+   &:not(:last-child) {
+      margin-bottom: 9px;
+   }
+}
+
+.footer-contacts {
+   color: rgba(255, 255, 255, 0.6);
+   transition-property: color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover,
+   &:focus {
+      color: var(--text-active);
+   }
+}
