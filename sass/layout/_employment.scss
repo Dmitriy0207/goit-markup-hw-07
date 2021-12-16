@@ -1,50 +1,44 @@
 /*----------------------------наша команда фото*/
-.section-services {
+.section__services {
    background: var(--background-section);
    padding-top: 0;
 }
 .text-title {
+   @include font(36px, 700, 1.16, 0.03em);
    font-style: normal;
-   font-weight: 700;
-   font-size: 36px;
-   line-height: 1.16;
-   letter-spacing: 0.03em;
 
    text-align: center;
 
    color: var(--text-header);
 }
-.employment-list {
+.employment__list {
+   @include flex;
    display: flex;
    margin-top: 50px;
    flex-basis: calc(100% / 3 - 30px);
 }
-.employment-item-wrap {
+.employment__item-wrap {
    position: relative;
 }
 
-.employment-item:not(:last-child) {
+.employment__item:not(:last-child) {
    margin-right: 30px;
 }
-.employment-text {
-
-   display: flex;
-   align-items: center;
-   justify-content: center;
+.employment__text {
+   @include flex;
 
    position: absolute;
    bottom: 0;
    left: 0;
-   
+
+   @include font(14px, 500, 1.1, 0.03em);
    height: 70px;
+
    text-transform: uppercase;
-   font-size: 500;
    text-align: center;
-   font-size: 14px;
-   line-height: 1.1;
-   letter-spacing: 0.03em; 
+
    width: 100%;
 
    color: var(--background-section);
-  background-color: rgba(47, 48, 58, 0.8);
+   background-color: rgba(47, 48, 58, 0.8);
 }

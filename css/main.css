@@ -132,17 +132,6 @@ body {
   pointer-events: none;
 }
 
-.backdrop.is-hidden .modal {
-  -webkit-transform: scale(2);
-          transform: scale(2);
-  -webkit-transition: -webkit-transform 300ms;
-  transition: -webkit-transform 300ms;
-  transition: transform 300ms;
-  transition: transform 300ms, -webkit-transform 300ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .modal {
   width: 528px;
   min-height: 581px;
@@ -392,39 +381,46 @@ body {
 }
 
 /*----------------------------наша команда фото*/
-.section-services {
+.section__services {
   background: var(--background-section);
   padding-top: 0;
 }
 
 .text-title {
-  font-style: normal;
-  font-weight: 700;
   font-size: 36px;
+  font-weight: 700;
   line-height: 1.16;
   letter-spacing: 0.03em;
+  font-style: normal;
   text-align: center;
   color: var(--text-header);
 }
 
-.employment-list {
+.employment__list {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: flex;
   margin-top: 50px;
   -ms-flex-preferred-size: calc(100% / 3 - 30px);
       flex-basis: calc(100% / 3 - 30px);
 }
 
-.employment-item-wrap {
+.employment__item-wrap {
   position: relative;
 }
 
-.employment-item:not(:last-child) {
+.employment__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.employment-text {
+.employment__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -437,13 +433,13 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 70px;
-  text-transform: uppercase;
-  font-size: 500;
-  text-align: center;
   font-size: 14px;
+  font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0.03em;
+  height: 70px;
+  text-transform: uppercase;
+  text-align: center;
   width: 100%;
   color: var(--background-section);
   background-color: rgba(47, 48, 58, 0.8);
@@ -457,16 +453,16 @@ body {
   display: flex;
 }
 
-.features-icon-item {
+.features__icon-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -475,38 +471,35 @@ body {
   border-radius: 4px;
 }
 
-.features-icon-item + .features-icon-item {
+.features__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features__icon-item + .features__icon-item {
   margin-left: 30px;
 }
 
-.features-text {
-  margin-top: 0px;
-}
-
-.features-title {
-  font-style: normal;
-  font-weight: 700;
+.features__title {
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  font-style: normal;
   text-transform: uppercase;
   color: var(--text-header);
   margin-top: 0;
   margin-bottom: 10px;
 }
 
-.features-text {
-  font-style: normal;
-  font-weight: 400;
+.features__text {
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  font-style: normal;
+  margin-top: 0px;
   color: var(--color-text);
   max-width: 270px;
-}
-
-.features-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .header {
@@ -676,7 +669,7 @@ body {
 }
 
 /*наша команда */
-.team-section {
+.section__team {
   background: #f5f4fa;
 }
 
@@ -684,7 +677,7 @@ body {
   margin-top: 0;
 }
 
-.team-list {
+.people__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -693,39 +686,39 @@ body {
       flex-basis: calc(100% / 4 - 30px);
 }
 
-.developer-item {
+.people__item {
   background: var(--background-section);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.developer-item:not(:last-child) {
+.people__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.team-card {
+.people__card--social {
   padding: 30px 0;
 }
 
-.name-developer {
-  font-style: normal;
-  font-weight: 500;
+.people__name {
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  font-style: normal;
   text-align: center;
   color: var(--text-header);
   margin-bottom: 10px;
 }
 
-.text-foto-team {
-  font-style: normal;
-  font-weight: 400;
+.people__proffesion {
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.18;
-  text-align: center;
   letter-spacing: 0.03em;
+  font-style: normal;
+  text-align: center;
   color: var(--color-text);
   margin-bottom: 16px;
 }
@@ -786,7 +779,7 @@ body {
 }
 
 /* соц сети */
-.social-icon-list {
+.social__icon-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -795,25 +788,25 @@ body {
           justify-content: center;
 }
 
-.social-icon-item {
+.social__icon-item {
   width: 44px;
   height: 44px;
 }
 
-.social-icon-item + .social-icon-item {
+.social__icon-item + .social__icon-item {
   margin-left: 10px;
 }
 
-.social-icon-link {
+.social__icon-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -826,12 +819,12 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icon-link:hover, .social-icon-link:focus {
+.social__icon-link:hover, .social__icon-link:focus {
   background-color: var(--text-active);
   color: var(--background-section);
 }
 
-.social-icon {
+.social__icon {
   fill: currentColor;
 }
 

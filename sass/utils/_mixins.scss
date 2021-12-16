@@ -1,3 +1,4 @@
+// @include font(px, , , em);
 @mixin font($fz, $fw, $lh, $ls) {
    font-size: $fz;
    font-weight: $fw;
@@ -5,6 +6,7 @@
    letter-spacing: $ls;
 }
 
+// @include flex;
 @mixin flex {
    display: flex;
    align-items: center;

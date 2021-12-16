@@ -1,18 +1,17 @@
 /*наша команда */
-.team-section {
+.section__team {
    background: #f5f4fa;
 }
 .team {
    margin-top: 0;
 }
-.team-list {
+.people__list {
    display: flex;
    margin-top: 50px;
    flex-basis: calc(100% / 4 - 30px);
 }
-.developer-item {
+.people__item {
    background: var(--background-section);
-
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
    border-radius: 0px 0px 4px 4px;
@@ -20,29 +19,21 @@
       margin-right: 30px;
    }
 }
-
-.team-card {
+.people__card--social {
    padding: 30px 0;
 }
-.name-developer {
+.people__name {
+   @include font(16px, 500, 1.18, 0.03em);
    font-style: normal;
-   font-weight: 500;
-   font-size: 16px;
-   line-height: 1.18;
-   letter-spacing: 0.03em;
-
    text-align: center;
 
    color: var(--text-header);
    margin-bottom: 10px;
 }
-.text-foto-team {
+.people__proffesion {
+   @include font(16px, 400, 1.18, 0.03em);
    font-style: normal;
-   font-weight: 400;
-   font-size: 16px;
-   line-height: 1.18;
    text-align: center;
-   letter-spacing: 0.03em;
 
    color: var(--color-text);
    margin-bottom: 16px;
