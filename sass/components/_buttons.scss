@@ -1,6 +1,6 @@
 .button,
 .button__send-modal,
-.footer-button-send {
+.footer__button--send {
    background: var(--text-active);
    color: var(--background-section);
    border: transparent;
@@ -25,10 +25,6 @@
       box-shadow: 0px 0px 12px 8px rgba(12, 21, 29, 0.24) inset;
    }
 }
-.footer-button-icon {
+.footer__button--icon {
    fill: currentColor;
-}
-.footer-button-send:hover,
-.footer-button-send:focus {
-   box-shadow: 0px 0px 12px 8px rgba(34, 60, 80, 0.24) inset;
 }

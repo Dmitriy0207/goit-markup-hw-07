@@ -1,41 +1,38 @@
-.footer-block {
+/*------------ address */
+.footer__block {
    display: flex;
    align-items: baseline;
 }
-/*------------ address */
-.footer-content {
+
+.footer__content {
    background: #2f303a;
    padding-top: 60px;
    padding-bottom: 60px;
 }
-.footer-logo {
+.footer__logo {
    color: var(--background-section);
    font-family: "Raleway";
-   font-weight: 700;
-   font-size: 26px;
-   line-height: 1.38;
+
+   @include font(26px, 700, 1.38, 0.03em);
 }
-.location {
+.location__link {
    color: var(--background-section);
 }
-.address-footer {
+.footer__address {
    flex-grow: 1;
 }
-.address-content {
+.address {
    margin-top: 20px;
 }
-.address-item {
+.footer__address--item {
+   @include font(14px, 500, 1.71, 0.03em);
    font-style: normal;
-   font-weight: normal;
-   font-size: 14px;
-   line-height: 1.71;
-   letter-spacing: 0.03em;
    &:not(:last-child) {
       margin-bottom: 9px;
    }
 }
 
-.footer-contacts {
+.footer__contacts--link {
    color: rgba(255, 255, 255, 0.6);
    transition-property: color;
    transition-duration: 250ms;

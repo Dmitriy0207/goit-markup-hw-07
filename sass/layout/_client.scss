@@ -1,11 +1,9 @@
 /* Клиенты */
-.client-icon-list {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+.client-icon__list {
+   @include flex;
    margin-top: 50px;
 }
-.client-icon-item {
+.client-icon__item {
    width: 170px;
    height: 92px;
    &:not(:last-child) {
@@ -13,15 +11,17 @@
    }
 }
 
-.client-icon-link {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+.client-icon__link {
+   @include flex;
+
    width: 100%;
    height: 100%;
+
    color: var(--color-icon-clients);
+
    border-radius: 4px;
    border: 1px solid var(--color-icon-clients);
+
    transition-property: color, border-color;
    transition-duration: 250ms;
    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -32,6 +32,6 @@
    }
 }
 
-.client-icons {
+.client__icons {
    fill: currentColor;
 }

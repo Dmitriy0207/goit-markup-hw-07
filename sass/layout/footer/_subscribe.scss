@@ -1,6 +1,6 @@
 /* -------------------subcribe */
 
-.send-form {
+.fooret__send--form {
    margin-left: 93px;
 }
 .form {
@@ -8,10 +8,12 @@
    margin-right: auto;
    justify-content: flex-end;
 }
+
 .subscribe {
+   font-weight: 700;
    margin-bottom: 20px;
 }
-.send-input {
+.send__input--footer {
    width: 358px;
    height: 50px;
 
@@ -36,20 +38,14 @@
    }
 }
 
-.footer-button-send {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+.footer__button--send {
+   @include flex;
 
    margin-left: 12px;
    min-width: 200px;
    min-height: 50px;
 }
-.footer-button-icon {
+.footer__button--icon {
    margin-left: 10px;
    fill: var(--background-section);
-}
-
-.subscribe {
-   font-weight: 700;
 }
