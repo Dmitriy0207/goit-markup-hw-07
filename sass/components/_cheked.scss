@@ -1,4 +1,4 @@
-.send-button {
+.button__send {
    text-align: center;
 }
 
@@ -6,30 +6,23 @@
    color: var(--text-active);
    margin-left: 2px;
 }
-.icon-check {
-   display: flex;
-   align-content: center;
-   justify-content: center;
+.conditions__icon-check {
+   @include flex;
 
    fill: var(--background-section);
 }
-.modal-check {
+.modal__check {
    margin-top: 20px;
    margin-bottom: 30px;
 }
-.conditions-text {
-   display: flex;
-   align-items: center;
-   justify-content: center;
+.conditions__text {
+   @include flex;
 
-   font-size: 14px;
-   font-style: 500;
-   line-height: 1.46;
-   letter-spacing: 0.03em;
+   @include font(14px, 500, 1.46, 0.03em);
 
    color: var(--color-text);
 }
-.border-icon {
+.conditions__icon {
    width: 16px;
    height: 15px;
 
@@ -38,20 +31,12 @@
 
    margin-right: 7px;
 
-   display: flex;
-   align-content: center;
-   justify-content: center;
+   @include flex;
 }
 
-.modal-check:checked + .conditions-text {
-   .border-icon {
+.modal__check:checked + .conditions__text {
+   .conditions__icon {
       background-color: var(--text-active);
       border: none;
    }
-}
-
-
-.footer-button-send:hover,
-.footer-button-send:focus {
-   box-shadow: 0px 0px 12px 8px rgba(34, 60, 80, 0.24) inset;
 }
