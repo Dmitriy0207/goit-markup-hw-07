@@ -1,16 +1,16 @@
 /* соц сети */
-.social__icon-list {
+.social {
    display: flex;
    justify-content: center;
 }
-.social__icon-item {
+.social__item {
    width: 44px;
    height: 44px;
 }
-.social__icon-item + .social__icon-item {
+.social__item + .social__item {
    margin-left: 10px;
 }
-.social__icon-link {
+.social__link {
    @include flex;
 
    width: 100%;

@@ -2,7 +2,7 @@
    background-color: var(--background-section);
 }
 
-.conteiner__head {
+.conteiner__header {
    display: flex;
    padding-top: 25px;
    padding-bottom: 25px;
@@ -59,7 +59,7 @@
       color: var(--text-active);
    }
 
-   &.current::after {
+   &.navigation__link--current::after {
       content: "";
       position: absolute;
       width: 100%;
@@ -71,7 +71,7 @@
    }
 }
 
-.contacts {
+.contacts__link {
    @include font(14px, 500, 1.2, 0.02em);
    display: flex;
    align-items: center;
@@ -86,7 +86,7 @@
       color: var(--text-active);
    }
 }
-.contacts__list {
+.contacts {
    display: flex;
    margin-left: auto;
    align-items: center;

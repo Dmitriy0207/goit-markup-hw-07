@@ -4,7 +4,7 @@
    display: flex;
 }
 
-.features__icon-item {
+.features__icon-box {
    @include flex;
 
    width: 270px;
@@ -21,7 +21,7 @@
    margin-right: 30px;
 }
 
-.features__icon-item + .features__icon-item {
+.features__icon-box + .features__icon-box {
    margin-left: 30px;
 }
 

@@ -1,13 +1,13 @@
 /*-------------секция портфолио--------------*/
-.site__list {
+.portfolio {
    display: flex;
    flex-wrap: wrap;
 }
-.site-list__works {
+.margin-top-left {
    margin-top: 50px;
    margin-left: -30px;
 }
-.site__item {
+.portfolio__item {
    margin-left: 30px;
    margin-bottom: 30px;
    flex-basis: calc((100% - 3 * 30px) / 3);
@@ -17,7 +17,7 @@
       margin-bottom: 0;
    }
 }
-.site__link {
+.portfolio__link {
    display: block;
 
    transition-property: transform, box-shadow;
@@ -28,21 +28,21 @@
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
          0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
    }
-   &:hover .works__overlay--text {
+   &:hover .portfolio__overlay-text {
       transform: translateY(0);
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
          0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
    }
-   &:focus .works__overlay--text {
+   &:focus .portfolio__overlay-text {
       transform: translateY(0);
    }
 }
-.works__overlay {
+.portfolio__overlay {
    position: relative;
    overflow: hidden;
 }
 
-.works__overlay--text {
+.portfolio__overlay-text {
    position: absolute;
    top: 0;
    padding: 63px 24px;
@@ -57,7 +57,7 @@
    transition-duration: 250ms;
    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.text__site {
+.portfolio__box {
    padding: 20px 24px;
 
    /*стили правой рамки */
@@ -76,12 +76,12 @@
    border-left-color: #eeeeee;
 }
 
-.text__site--name {
+.portfolio__title {
    @include font(18px, 700, 2, 0.06em);
 
    color: var(--text-header);
 }
-.text__site--caption {
+.portfolio__text {
    @include font(16px, 400, 1.8, 0.03em);
    color: var(--color-text);
 }

@@ -1,9 +1,9 @@
 /*----------------------------наша команда фото*/
-.section__employment {
+.no-padding-top {
    background: var(--background-section);
    padding-top: 0;
 }
-.text-title {
+.section__title {
    @include font(36px, 700, 1.16, 0.03em);
    font-style: normal;
 
@@ -11,13 +11,13 @@
 
    color: var(--text-header);
 }
-.employment__list {
+.employment {
    @include flex;
    display: flex;
    margin-top: 50px;
    flex-basis: calc(100% / 3 - 30px);
 }
-.employment__item-wrap {
+.employment__box {
    position: relative;
 }
 

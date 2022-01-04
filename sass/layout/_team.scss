@@ -1,11 +1,13 @@
 /*наша команда */
-.section__team {
+.section--other-background {
    background: #f5f4fa;
 }
+
 .team {
    margin-top: 0;
 }
-.people__list {
+
+.people {
    display: flex;
    margin-top: 50px;
    flex-basis: calc(100% / 4 - 30px);
@@ -19,10 +21,10 @@
       margin-right: 30px;
    }
 }
-.people__card--social {
+.people__box {
    padding: 30px 0;
 }
-.people__name {
+.people__title {
    @include font(16px, 500, 1.18, 0.03em);
    font-style: normal;
    text-align: center;
@@ -30,7 +32,7 @@
    color: var(--text-header);
    margin-bottom: 10px;
 }
-.people__proffesion {
+.people__text {
    @include font(16px, 400, 1.18, 0.03em);
    font-style: normal;
    text-align: center;
